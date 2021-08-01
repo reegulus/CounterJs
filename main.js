@@ -11,5 +11,5 @@ btnMinus.addEventListener('click', function (){
     input.value = parseInt(input.value) -1
 })
 btnReset.addEventListener('click', function (){
-    input.value = parseInt(input.value) - 0
+    input.value = 0
 })
