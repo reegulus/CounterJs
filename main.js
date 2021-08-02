@@ -3,7 +3,7 @@ const btnMinus = document.getElementById('btnMinus')
 const btnReset = document.getElementById('btnReset')
 const btnPlus = document.getElementById('btnPlus')
 
-let counter = 0
+
 input.couter = counter
 
 btnPlus.addEventListener('click', function () {
