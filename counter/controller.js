@@ -1,4 +1,5 @@
-import view from './view.js'
+import view from './view'
+import model from './model';
 const btnMinus = document.getElementById('btnMinus')
 const btnReset = document.getElementById('btnReset')
 const btnPlus = document.getElementById('btnPlus')
