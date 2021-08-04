@@ -4,9 +4,10 @@ const btnMinus = document.getElementById('btnMinus')
 const btnReset = document.getElementById('btnReset')
 const btnPlus = document.getElementById('btnPlus')
 
+model.init()
 view.updateCounter(model.counter)
 
-btnPlus.addEventListener('click', function () {
+    btnPlus.addEventListener('click', function () {
     model.increase()
     view.updateCounter(model.counter)
 })
