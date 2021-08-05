@@ -1,13 +1,11 @@
-import model from './model.js';
+import Model from './model.js';
 import View from './view.js'
-
-
 
 const btnMinus = document.getElementById('btnMinus')
 const btnReset = document.getElementById('btnReset')
 const btnPlus = document.getElementById('btnPlus')
 
-model.init()
+const model = new Model()
 const view = new View(model.counter)
 view.updateCounter(model.counter)
 

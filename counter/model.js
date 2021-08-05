@@ -1,26 +1,28 @@
-export default {
-    counter: 0,
-    init: function () {
+export default class Model {
+    constructor() {
+        this.counter = 0
         this.loadFromLocalStorage()
-    },
-    loadFromLocalStorage: function () {
+    }
+
+    loadFromLocalStorage() {
         const data = localStorage.getItem('counter')
         if (data) {
             this.counter = JSON.parse(data)
         }
-    },
-    saveToLocalStorage: function () {
+
+    }
+    saveToLocalStorage () {
         localStorage.setItem('counter', JSON.stringify(this.counter))
-    },
-    increase: function () {
+    }
+    increase () {
         ++this.counter
         this.saveToLocalStorage()
-    },
-    decrease: function () {
+    }
+    decrease () {
         --this.counter
         this.saveToLocalStorage()
-    },
-    reset: function () {
+    }
+    reset () {
         this.counter = 0
         this.saveToLocalStorage()
     }
