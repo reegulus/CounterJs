@@ -1,10 +1,14 @@
 import model from './model.js';
-import view from './view.js'
+import View from './view.js'
+
+
+
 const btnMinus = document.getElementById('btnMinus')
 const btnReset = document.getElementById('btnReset')
 const btnPlus = document.getElementById('btnPlus')
 
 model.init()
+const view = new View(model.counter)
 view.updateCounter(model.counter)
 
     btnPlus.addEventListener('click', function () {
